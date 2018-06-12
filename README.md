@@ -1,6 +1,6 @@
-#Bon Voyage Database Management System
+# Bon Voyage Database Management System
 
-##Overview
+## Overview
 
 A hotel's reservation system is the heart of the hotel itself. Think about it: if you can't get rooms booked, what's the function of a hotel? For many hotels, a reservations system does more than just book rooms. It also organizes reservations, saves details about guest preferences, and can even keep contact with some special event and restaurant to yield maximum returns. Many reservation solutions can also help you craft hotel deal packages for busy seasons or certain holidays, while still enabling you to come out on the end with a remarkable price.
 
@@ -10,11 +10,11 @@ Again, hotel reservations database or booking software can consolidate all of th
 
 _Bon Voyage_ does all this and more. We let you connect with private event organizers and you can get access to a multitude of events across your city of choice. Each restaurant, room, event organizer is rated by you and this helps all prospective guests to know the pros and cons of each service. We even provide a list of some of the local tourist attractions that may interest you during your visit to the city.
 
-##Mission Statement:
+## Mission Statement:
 
 A project to create a database to view and manage bookings by various customers. It searches through all the hotels or properties and events in the locality that are registered in the system and returns the deals as per the customer requirements and date availability.
 
-##Objective:
+## Objective:
 
 To make traveling an even more of a delightful experience, we will also store the details or profiles of the customers and once a booking is made the customer will get an option to view/match with other travelers staying in the same area or hotel during the same duration of stay. We will have the details of various hotels, restaurants, pubs in and around the city. We will also have details, like things to do around the city and store the information of event organizers to help customers to explore the city. 
 
@@ -36,14 +36,14 @@ We created the following tables:
 
 _Included with xls document (in the root), here are explainations about important tables. The project contains entertainment items as well such as restaurants and tourist attractions, hosts called Event Organizers would manage special events._
 
-##Key Business Rules:
+## Key Business Rules:
 
-1. Bookings are converted to Order and so, Order contains BookingID as FK only once the customer has paid for the booking.
-2. Order can also have some orders like ticket to some event etc. In this case, it will have the reference ie OrganizerId/HotelID who provided the service.
+1. __Bookings__ are converted to __Order__ and so, _Order_ contains _BookingID_ as FK only **_AFTER_** the customer has paid for the booking.
+2. __Order__ can also have some orders like ticket to some event etc. In this case, it will have the _reference (OrganizerId or HotelID)_ which tells us who provided the service.
 3. Any person who uses our services has to be a registered customer ie no guests.
-4. Address has columns namely CustomerID, HotelID and RestaurantID corresponding to whose address it is.
+4. __Address__ has columns namely _CustomerID, HotelID or RestaurantID_ corresponding to whose address it is.
 
-##Design Decisions:
+## Design Decisions:
 
 | Entity Name | Why Entity is Included | How Entity is Related to Other Entities |
 | ----------- | :--------------------: | :-------------------------------------: |
