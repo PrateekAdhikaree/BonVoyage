@@ -5,7 +5,7 @@
 * **Platform:** MS SQL Server 2016
 * **OS:** Windows 10
 
-![erd](https://github.com/PrateekAdhikaree/BonVoyage/blob/master/ERD_Final.png "Entity Relationship Diagram")
+![erd](https://github.com/PrateekAdhikaree/BonVoyage/blob/master/img/ERD_Final.png "Entity Relationship Diagram")
 
 ## Summary
 
