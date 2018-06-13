@@ -1,5 +1,14 @@
 # Bon Voyage Database Management System
 
+## Specifications
+
+* **Database:** MSSQL
+* **OS:** Windows 10
+
+## Summary
+
+Bon Voyage is a relational database with 17 entities, 2 multi-table views, 2 computed columns and a data encryption trigger
+
 ## Overview
 
 A hotel's reservation system is the heart of the hotel itself. Think about it: if you can't get rooms booked, what's the function of a hotel? For many hotels, a reservations system does more than just book rooms. It also organizes reservations, saves details about guest preferences, and can even keep contact with some special event and restaurant to yield maximum returns. Many reservation solutions can also help you craft hotel deal packages for busy seasons or certain holidays, while still enabling you to come out on the end with a remarkable price.
