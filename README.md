@@ -2,12 +2,16 @@
 
 ## Specifications
 
-* **Database:** MSSQL
+* **Platform:** MS SQL Server 2016
 * **OS:** Windows 10
+
+![erd](https://github.com/PrateekAdhikaree/BonVoyage/blob/master/ERD_Final.png "Entity Relationship Diagram")
 
 ## Summary
 
-Bon Voyage is a relational database with 17 entities, 2 multi-table views, 2 computed columns and a data encryption trigger
+* Bon Voyage is a relational database with 17 entities, 2 multi-table views, 2 computed columns and a data encryption trigger
+
+* Bon voyage is a powerful reservation database designed for tour & activity of all sizes, built to bring ease and efficiency to every aspect of your tour 
 
 ## Overview
 
@@ -70,3 +74,39 @@ _Included with xls document (in the root), here are explainations about importan
 | Orders | Orders will have all the details when a booking is confirmed and a payment is made. |  |
 | BookingType | This tells us what is the type of booking such as a restaurant booking, hotel booking or an event booking. | _BookingTypeID_ is a FK in *Bookings* which stores all the information about a booking. |
 | RoomBookings | This a look-up table that keeps track of the room bookings between a date interval. |  |
+
+## Features
+
+### Trigger, Data Encryption and Computed Columns
+
+![cust1](https://github.com/PrateekAdhikaree/BonVoyage/blob/master/img/cust1.jpg "Customer Table")
+
+![cust2](https://github.com/PrateekAdhikaree/BonVoyage/blob/master/img/cust2.jpg "Customer Table - Code snippets")
+
+![cust3](https://github.com/PrateekAdhikaree/BonVoyage/blob/master/img/cust3.jpg "Customer Table - Sample Data")
+
+### Multi-table Views
+
+![mtv1](https://github.com/PrateekAdhikaree/BonVoyage/blob/master/img/mtv1.jpg "vw_EventOrganizerDetails")
+
+![mtv2](https://github.com/PrateekAdhikaree/BonVoyage/blob/master/img/mtv2.jpg "vw_HotelMaxBooking")
+
+![mtv3](https://github.com/PrateekAdhikaree/BonVoyage/blob/master/img/mtv3.jpg "Multi-table View Code snippets")
+
+![mtv4](https://github.com/PrateekAdhikaree/BonVoyage/blob/master/img/mtv4.jpg "Views on SQL Server")
+
+![mtv5](https://github.com/PrateekAdhikaree/BonVoyage/blob/master/img/mtv5.jpg "vw_EventOrganizerDetails")
+
+![mtv6](https://github.com/PrateekAdhikaree/BonVoyage/blob/master/img/mtv6.jpg "vw_HotelMaxBookings")
+
+## Reports
+
+All reports done in PowerBI:
+
+![reports1](https://github.com/PrateekAdhikaree/BonVoyage/blob/master/Reports/BonVoyage_Average_Rating_of_Restaurants.png "BonVoyage - Average Rating of Restaurants Report")
+
+![reports2](https://github.com/PrateekAdhikaree/BonVoyage/blob/master/Reports/BonVoyage_Average_Ratings_of_Organizers.png "BonVoyage - Average Ratings of Organizers Report")
+
+![reports3](https://github.com/PrateekAdhikaree/BonVoyage/blob/master/Reports/BonVoyage_Places_of_Tourist_Attraction.png "BonVoyage - Places of Tourist Attractions Report")
+
+_.pbix file can be found in <root>/Reports/_
